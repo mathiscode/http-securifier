@@ -1,0 +1,6 @@
+{
+  "name": "HTTP Securifier",
+  "description": "A simple proxy to request any HTTP resource through an HTTPS connection",
+  "repository": "https://github.com/mathiscode/http-securifier",
+  "keywords": ["http", "https", "proxy", "mixed content"]
+}
