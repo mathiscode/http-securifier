@@ -1,0 +1,44 @@
+{
+  "name": "http-securifier",
+  "version": "0.1.0",
+  "description": "A simple proxy to request any HTTP resource through an HTTPS connection",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiscode/http-securifier.git"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "ssl",
+    "proxy",
+    "tunnel",
+    "mixed content"
+  ],
+  "author": {
+    "name": "J.R. Mathis",
+    "url": "https://github.com/mathiscode"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathiscode/http-securifier/issues"
+  },
+  "homepage": "https://github.com/mathiscode/http-securifier#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
