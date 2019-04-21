@@ -5,10 +5,12 @@ const URLParser = require('url')
 const app = express()
 
 app.use((req, res, next) => {
+  if (!req.query.url) return res.redirect('https://github.com/mathiscode/http-securifier')
+
   const rawUrl = req.query.url
   const url = URLParser.parse(rawUrl)
 
-  if (!url.hostname) return res.json(400, { error: 'Invalid URL' })
+  if (!url || !url.hostname) return res.status(400).json({ error: 'Invalid URL' })
 
   req.pipe(request(rawUrl)).pipe(res)
 })
