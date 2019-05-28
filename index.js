@@ -9,7 +9,7 @@ app.use((req, res, next) => {
     if (!req.query.url) return res.redirect('https://github.com/mathiscode/http-securifier')
 
     const rawUrl = req.query.url
-    const url = URLParser.parse(rawUrl)
+    const url = new URLParser.URL(rawUrl)
 
     if (!url || !url.hostname) return res.status(400).json({ error: 'Invalid URL' })
 
